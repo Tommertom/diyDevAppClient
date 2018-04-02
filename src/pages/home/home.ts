@@ -1,4 +1,3 @@
-import { PrintOptions } from './../../../node_modules/.staging/@ionic-native/printer-5336a59a/index.d';
 import { Component } from '@angular/core';
 import { NavController, Platform } from 'ionic-angular';
 
@@ -204,7 +203,6 @@ export class HomePage {
       landscape: true,
       grayscale: true
     };
-
-    this.printer.print('Hello world!', PrintOptions );
+    this.printer.print('Hello world!', options );
   }
 }
