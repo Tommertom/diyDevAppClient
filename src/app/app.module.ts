@@ -20,6 +20,10 @@ import { DeviceMotion } from '@ionic-native/device-motion';
 import { DeviceOrientation } from '@ionic-native/device-orientation';
 import { Network } from '@ionic-native/network';
 import { Printer } from '@ionic-native/printer';
+import { Screenshot } from '@ionic-native/screenshot';
+import { SMS } from '@ionic-native/sms';
+import { SocialSharing } from '@ionic-native/social-sharing';
+
 
 @NgModule({
   declarations: [
@@ -49,7 +53,10 @@ import { Printer } from '@ionic-native/printer';
     DeviceOrientation,
     Network,
     Printer,
-
+    Screenshot,
+    SMS,
+    SocialSharing,
+    
     StatusBar,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler }

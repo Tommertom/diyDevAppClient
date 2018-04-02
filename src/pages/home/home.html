@@ -43,8 +43,15 @@
   <pre>{{orientation}}</pre>
   <br> Network
   <pre>{{networkData}}</pre>
-  <br>
-  NFC not done yet
+  <br> NFC not done yet
   <br>
   <button ion-button (click)="doPrintAction()">Do print action</button>
+  <br>
+  <button ion-button (click)="takeScreenShot()">Take screenshot</button>
+  <img [src]="screenshotURI" />
+  <br>
+  <button ion-button (click)="doSMS()">Send SMS</button>
+  <br>
+  <button ion-button (click)="doSocialShare()">Do Social Share</button>
+  <br>
 </ion-content>
