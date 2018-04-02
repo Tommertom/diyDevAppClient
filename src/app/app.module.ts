@@ -15,14 +15,18 @@ import { Brightness } from '@ionic-native/brightness';
 import { CallNumber } from '@ionic-native/call-number';
 import { Camera } from '@ionic-native/camera';
 import { Clipboard } from '@ionic-native/clipboard';
-
+import { Contacts } from '@ionic-native/contacts';
+import { DeviceMotion } from '@ionic-native/device-motion';
+import { DeviceOrientation } from '@ionic-native/device-orientation';
+import { Network } from '@ionic-native/network';
+import { Printer } from '@ionic-native/printer';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage
   ],
-  imports: [ 
+  imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp)
   ],
@@ -37,9 +41,14 @@ import { Clipboard } from '@ionic-native/clipboard';
     Badge,
     BatteryStatus,
     Brightness,
-    CallNumber, 
+    CallNumber,
     Camera,
     Clipboard,
+    Contacts,
+    DeviceMotion,
+    DeviceOrientation,
+    Network,
+    Printer,
 
     StatusBar,
     SplashScreen,

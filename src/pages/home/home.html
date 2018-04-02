@@ -12,6 +12,7 @@
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
 
+  Debuginfo
   <pre>{{debugInfo}}</pre>
 
   <button ion-button (click)="toggleFlashlight()">Toggle flashlight</button>
@@ -20,7 +21,7 @@
   <br>
   <button ion-button (click)="resetBadge()">Reset badge</button>
   <button ion-button (click)="setBadge()">Set badge</button>
-  <br>
+  <br> Battery
   <pre>{{batteryLevel}}</pre>
   <br>
   <button ion-button (click)="setBrightnessLow()">Set brightness low</button>
@@ -35,5 +36,16 @@
   <br>
   <button ion-button (click)="doClipboard()">Clipboard action</button>
   <br>
-  
+  <button ion-button (click)="addContact()">Add contact</button>
+  <br> Acceleration
+  <pre>{{acceleration}}</pre>
+  <br> Orientation
+  <pre>{{orientation}}</pre>
+  <br> Network
+  <pre>{{networkData}}</pre>
+  <br>
+  NFC not done yet
+  <br>
+  <button ion-button (click)="doPrintAction()">Do print action</button>
+
 </ion-content>
