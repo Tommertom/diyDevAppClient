@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      diyDevApp Client Demo
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -11,4 +11,29 @@
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
+
+  <pre>{{debugInfo}}</pre>
+
+  <button ion-button (click)="toggleFlashlight()">Toggle flashlight</button>
+  <br>
+  <button ion-button (click)="toggleLeanMode()">Toggle lean mode android fullscreen</button>
+  <br>
+  <button ion-button (click)="resetBadge()">Reset badge</button>
+  <button ion-button (click)="setBadge()">Set badge</button>
+  <br>
+  <pre>{{batteryLevel}}</pre>
+  <br>
+  <button ion-button (click)="setBrightnessLow()">Set brightness low</button>
+  <button ion-button (click)="setBrightnessHigh()">Set brightness high</button>
+  <br>
+  <button ion-button (click)="doCallNumber()">Call number</button>
+  <pre>{{callNumberResult}}</pre>
+  <br>
+  <button ion-button (click)="doCameraAction()">Take picture</button>
+  <br>
+  <img [src]="base64Image" />
+  <br>
+  <button ion-button (click)="doClipboard()">Clipboard action</button>
+  <br>
+  
 </ion-content>
